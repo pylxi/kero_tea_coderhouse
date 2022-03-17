@@ -32,13 +32,28 @@
 	display: flex;
 }
 
+
 .menu-item-img{
 	@include small-item;
+}
+
+.menu-item-heading{
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .menu-item-name{
 	@include section-title;
 	 color: map-get($color,terciary);
+	 margin-right: 1.4em;
+
+}
+
+.menu-item-price{
+	@include section-title;
+	 color: map-get($color,terciary);
+
 }
 
 .menu-item-text{
