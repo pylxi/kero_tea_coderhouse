@@ -1,0 +1,15 @@
+.footer{
+	background-color: #FFFFFF;
+	padding: 1rem;
+	padding-top:2rem;
+	text-align: center;
+	margin: 0;
+
+	.social{
+		a{
+			font-size: 2rem;
+			color: map-get($color,terciary);
+			margin:0 8px;
+		}
+	}
+}
