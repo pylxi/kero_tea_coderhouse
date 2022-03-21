@@ -1,0 +1,15 @@
+.datos{
+	.item{
+		padding:0.4rem;
+
+	}
+}
+
+.consulta{
+	@extend .datos;
+	margin-top: 0.3rem;
+}
+
+.comentarios{
+	padding:0.3rem;
+}

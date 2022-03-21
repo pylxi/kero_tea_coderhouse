@@ -1,15 +1,12 @@
 .menu{
-	font-size: 1rem;
-	background-color:#FFFFFF;
-	padding-top: 1em;
-	padding-left: 1em;
-	
+	@include page;
 }
 
 .menu-title{
 	@include page-title;
 	padding-bottom:1rem;
 	color: map-get($color,secondary);
+
 }
 
 .menu-group-heading{

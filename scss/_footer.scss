@@ -5,11 +5,11 @@
 	text-align: center;
 	margin: 0;
 
-	.social{
-		a{
-			font-size: 2rem;
-			color: map-get($color,terciary);
-			margin:0 8px;
-		}
+	h6{
+		color: map-get($color,terciary);
+		font-size: 2rem;
+		font-weight: map-get($font-weights,"semibold");
+
 	}
+	
 }
