@@ -7851,6 +7851,10 @@ ul {
     ul li a {
       text-decoration: none; }
 
+.responsive {
+  width: 100%;
+  height: auto; }
+
 .nav_bar {
   grid-area: nav;
   width: 100%;
@@ -7976,7 +7980,8 @@ ul {
   padding: 1rem;
   padding-top: 2rem;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  grid-area: footer; }
   .footer h6, .footer .h6 {
     color: #514F16;
     font-size: 2rem;
@@ -8007,6 +8012,20 @@ ul {
   grid-template-rows: 0.2fr 1.5fr;
   grid-template-areas: "nav" "slider";
   grid-gap: 0.2rem; }
+
+.container_contacto {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 0.2fr 1.5fr 0.2fr;
+  grid-template-areas: "nav nav" "img form" "footer footer"; }
+  @media only screen and (max-width: 768px) {
+    .container_contacto {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 100%;
+      grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
+      grid-template-areas: "nav" "img" "form" "footer"; } }
 
 body {
   background-color: #AFAD55;
@@ -8179,6 +8198,15 @@ hr.rounded {
   visibility: visible;
   margin-top: 12px;
   border: 1px solid #ffb7c5; }
+
+.contacto-img {
+  grid-area: img; }
+
+.contacto-formulario {
+  grid-area: form;
+  background-color: #FFFFFF;
+  padding-left: 2rem;
+  padding-top: 2rem; }
 
 .datos .item, .consulta .item {
   padding: 0.4rem; }

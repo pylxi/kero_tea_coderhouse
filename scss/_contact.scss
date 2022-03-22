@@ -1,3 +1,15 @@
+
+
+.contacto-img{
+	grid-area: img;
+}
+
+.contacto-formulario{
+	grid-area: form;
+	background-color: map-get($color,fondo);
+	padding-left:2rem;
+	padding-top:2rem;
+}
 .datos{
 	.item{
 		padding:0.4rem;

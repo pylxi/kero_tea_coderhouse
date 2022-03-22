@@ -15,3 +15,34 @@
 
 	
 }
+
+.container_contacto{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 0.2fr 1.5fr 0.2fr;
+
+	//ESTRUCTURA GRIDS 2 COLUMNAS 3 FILAS
+
+	grid-template-areas:
+	"nav nav"
+	"img form"
+	"footer footer"
+	;
+
+	@media only screen and (max-width: 768px) {
+		display: grid;
+		height: 100vh;
+		grid-template-columns: 100%;
+		grid-template-rows: 0.2fr 1fr 1.5fr 0.2fr;
+
+		//ESTRUCTURA GRIDS 2 COLUMNAS 3 FILAS
+
+		grid-template-areas:
+		"nav"
+		"img"
+		"form"
+		"footer"
+	;
+	}
+}
